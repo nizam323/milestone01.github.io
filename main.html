@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume Builder</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: ghostwhite;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        img {
+            border: 2px solid;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Resume</h1>
+    </header>
+    <main>
+        <section id="personal-info">
+            <h2>Personal Information</h2>
+            <img src="my-profile.jpg" alt="Your Profile Picture" width="200" height="200">
+            <h3>Name: <b style="font-weight: 300;">Nizam</b></h3>
+            <h3>Contact Details: <b style="font-weight: 300;">abc@gmail.com</b></h3>
+        </section>
+        <section id="education">
+            <h2>Education : <b style="font-weight: 300;">Inter</b>
+            </h2>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <ul id="skills" class="hide">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>TYPESCRIPT</li>
+            </ul>
+            <button id="btn" onclick="toggle()">Show Skills</button>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
